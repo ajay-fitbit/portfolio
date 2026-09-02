@@ -256,34 +256,6 @@ This ensures the chatbot answers questions accurately about YOU, not generic kno
 - Stays current with updates you make through the admin panel
 - Avoids hallucinations by grounding responses in your content
 
-### Document Types Supported
-- PDF files (`.pdf`)
-- Word documents (`.docx`)
-- Text files (`.txt`)
-
-## 📦 Deployment
-
-### Production Checklist
-See `PRODUCTION_DEPLOYMENT_CHECKLIST.md` for detailed deployment steps.
-
-### Quick Deploy (Same Server)
-```powershell
-.\deploy_same_server.ps1
-```
-
-### Production Deployment
-```powershell
-.\deploy.ps1
-```
-
-### Environment Setup for Production
-Ensure:
-- HTTPS/SSL certificate is configured
-- Database credentials are secured
-- OpenAI API key is stored securely (environment variable or secrets management)
-- ChromaDB is configured for persistent storage
-- PHP errors are logged, not displayed
-- Admin panel has strong authentication
 
 ## 🔧 Troubleshooting
 
@@ -347,24 +319,6 @@ Contributions are welcome! Please:
 3. Make your changes
 4. Submit a pull request
 
-## 📚 Additional Resources
-
-- [OpenAI API Documentation](https://platform.openai.com/docs)
-- [ChromaDB Documentation](https://docs.trychroma.com)
-- [PHP Documentation](https://www.php.net/manual/)
-- See individual documentation files:
-  - `CHATBOT_README.md` - Detailed chatbot setup
-  - `PRODUCTION_DEPLOYMENT.md` - Production deployment guide
-  - `SSH_TROUBLESHOOTING.md` - SSH and remote access issues
-  - `SSL_FIX_GUIDE.md` - SSL certificate configuration
-
-## 📞 Support
-
-For issues and questions:
-- Check existing documentation in the repo
-- Review troubleshooting section above
-- Check API health endpoint for system status
-- Review application logs
 
 ---
 
