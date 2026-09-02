@@ -1,0 +1,54 @@
+.floating-menu {
+    position: fixed;
+    top: 15px; /* Adjust as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    background-color: #dae3ee;
+    padding: 10px;
+    border-radius: 15px; /* Rounded corners */
+    border: 0px solid #272626; /* White edge border */
+    box-shadow: 0 4px 10px rgba(87, 70, 70, 0.2);
+    z-index: 1000; /* Ensure it stays on top */
+    display: flex; /* Use flexbox for horizontal alignment */
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.floating-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.floating-menu li {
+    margin: 0 10px; /* Space between menu items */
+}
+
+.floating-menu a {
+    color: rgb(19, 18, 18);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.floating-menu a:hover {
+    text-decoration: underline;
+}
+
+.floating-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Initial shadow */
+}
+
+.floating-button:hover {
+    transform: translateY(-5px); /* Move up on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}

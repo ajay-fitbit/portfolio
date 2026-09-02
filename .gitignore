@@ -1,0 +1,17 @@
+.venv/
+backup_production_20251109_110903/
+portfolio_prod_backup/
+test*.*
+.env
+*.log
+*.ps1
+*.bat
+*.pub
+*.sql
+*.md
+*.txt
+*.zip
+!README.md
+!setup_chatbot_db.sql
+!start_chroma.bat
+

@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+    font-family: 'Verdana', sans-serif;
+    font-size: 15px; /* 1.5vw for auto font size */
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Set the width of paragraph tags to 60% */
+section p {
+    width: 80%;
+    margin: 0 auto; /* Center the paragraph */
+    text-align: center; /* Justify text */
+    line-height: 2;
+}
+.content {
+    padding: 10px;
+}
+
+section {
+    margin: 10px 0;
+    padding: 1px;
+    border: 0px solid #ddd;
+    border-radius: 5px;
+}
+
+.profile-image {
+    width: 150px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 75px; /* Make it circular */
+    display: block;
+    margin: 60px auto; /* Center the image */
+}
+
+/* Footer styles */
+footer {
+    position: relative; /* Position footer */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: black; /* Change text color */
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: black; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between links */
+    transition: color 0.3s; /* Smooth color transition */
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: #4a90e2; /* Change color on hover */
+    text-decoration: none; /* Ensure no underline on hover */    
+}
+
+footer i {
+    margin-right: 10px; /* Space between icon and text */
+}
+.footer-icon {
+    width: 40px; /* Set icon size */
+    height: 40px; /* Set icon size */
+    vertical-align: middle; /* Align icon with text */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+footer a:hover .footer-icon {
+    transform: scale(1.2); /* Scale icon up on hover */
+    opacity: 0.8; /* Change icon opacity on hover */
+    font-size: 25px;
+}
+
+/* LinkedIn Text Styles */
+.blue-background {
+    background-color: #0077B5; /* LinkedIn blue color */
+    color: white; /* Text color within the blue background */
+    padding: 2px 4px; /* Padding for better appearance */
+    border-radius: 3px; /* Rounded corners */
+}
+.dropdown-content {
+    display: none;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+
+    body {
+        font-family: 'Verdana', sans-serif;
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .floating-menu {
+        /* right: 2px; */ /* Adjust for smaller screens */
+        top: 10px;
+        padding: 8px;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+    section {
+        margin: 5px 0;
+    }
+    section p {
+        width: 100%;
+        margin: 0 auto; /* Center the paragraph */
+        text-align: center; /* Justify text */
+        line-height: 2;
+    }
+    .profile-image {
+        width: 100px; /* Set the desired width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 75px; /* Make it circular */
+        display: block;
+    }
+    .footer-icon {
+        width: 35px; /* Set icon size */
+        height: 35px; /* Set icon size */
+        margin-right: 5px; /* Space between icon and text */
+    }
+    footer a {
+        margin: 0 2px; /* Space between links */
+        font-size: 15px;
+    }
+    .modal-content {
+        margin: 23% auto; /* 15% from the top and centered */
+    }
+    table{
+        font-size:12px
+    }
+    th, td { 
+        padding: 4px; 
+    } 
+}
+
+/* Mobile View */
+@media (max-width: 425px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    .floating-menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;  /* Show burger menu on mobile */
+        position: relative; /* Set position relative for alignment */
+        z-index: 1000; /* Ensure it stays on top */
+        cursor: pointer; /* Pointer cursor on hover */
+    }
+
+    section {
+        margin: 5px 0;
+    }
+    section p {
+        width: 100%;
+        margin: 0 auto; /* Center the paragraph */
+        text-align: center; /* Justify text */
+        line-height: 2;
+    }
+    .profile-image {
+        width: 80px; /* Set the desired width */
+        margin: 0 auto; /* Center the image */
+        position: inherit;
+    }
+   
+    footer a {
+        color: black; /* Link color */
+        text-decoration: none; /* Remove underline */
+        margin: 0 2px; /* Space between links */
+        transition: color 0.3s; /* Smooth color transition */
+        font-size: 13px;
+    }
+    .footer-icon {
+        width: 30px; /* Set icon size */
+        height: 30px; /* Set icon size */
+        vertical-align: middle; /* Align icon with text */
+        /* margin-right: 5px; */ /* Space between icon and text */
+    }
+    table{
+        font-size:10px
+    }
+    th, td { 
+        padding: 2px; 
+    }
+    .content {
+        padding: 0px;
+    }
+}

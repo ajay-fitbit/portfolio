@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    font-family: 'Verdana', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+
+/* Set the width of paragraph tags to 60% */
+section p {
+    width: 60%;
+    margin: 0 auto; /* Center the paragraph */
+    text-align: center;  /* Justify text */
+    line-height: 2;
+}
+.content {
+    padding: 20px;
+}
+
+section {
+    margin: 10px 0;
+    padding: 1px;
+    border: 0px solid #ddd;
+    border-radius: 5px;
+}
+
+.profile-image {
+    width: 150px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 75px; /* Make it circular */
+    display: block;
+    margin: 20px auto; /* Center the image */
+}
+
+/* Footer styles */
+footer {
+    position: relative; /* Position footer */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: black; /* Change text color */
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: black; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between links */
+    transition: color 0.3s; /* Smooth color transition */
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: #4a90e2; /* Change color on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+footer i {
+    margin-right: 10px; /* Space between icon and text */
+}
+.footer-icon {
+    width: 40px; /* Set icon size */
+    height: 40px; /* Set icon size */
+    vertical-align: middle; /* Align icon with text */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+footer a:hover .footer-icon {
+    transform: scale(1.2); /* Scale icon up on hover */
+    opacity: 0.8; /* Change icon opacity on hover */
+}
+
+/* LinkedIn Text Styles */
+.blue-background {
+    background-color: #0077B5; /* LinkedIn blue color */
+    color: white; /* Text color within the blue background */
+    padding: 2px 4px; /* Padding for better appearance */
+    border-radius: 3px; /* Rounded corners */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .floating-menu {
+        right: 10px; /* Adjust for smaller screens */
+        top: 10px;
+    }
+
+    section {
+        margin: 30px 0;
+    }
+}
